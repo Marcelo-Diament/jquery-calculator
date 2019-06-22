@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3">
+        <title>Calculadora JQuery</title>
+        <link href='https://fonts.googleapis.com/css?family=KhandMajor Mono Display|Raleway' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <h1>Calculadora JQuery<sup> 3.1.2</sup></h1>
+        <p><b>Sejam bem vindos!</b> Essa é uma calculadora feita com JQuery, uma biblioteca de Js. <b>Aproveitem!</b></p>
+        </br>
+        <div id="calculadora">
+            <div id="total"></div>
+            <button class="btn num" id="btn1" value="1">1</button>
+            <button class="btn num" id="btn2" value="2">2</button>
+            <button class="btn num" id="btn3" value="3">3</button>
+            <button class="btn num" id="btn4" value="4">4</button>
+            <button class="btn num" id="btn5" value="5">5</button>
+            </br>
+            <button class="btn num" id="btn6" value="6">6</button>
+            <button class="btn num" id="btn7" value="7">7</button>
+            <button class="btn num" id="btn8" value="8">8</button>
+            <button class="btn num" id="btn9" value="9">9</button>
+            <button class="btn num" id="btn10" value="0">0</button>
+            </br>
+            <button class="btn ope" id="plus" value="+"> + </button>
+            <button class="btn ope" id="menos" value="-">  -  </button>
+            <button class="btn ope" id="vezes" value="*"> * </button>
+            <button class="btn ope" id="por" value="/"> / </button>
+            <button class="btn" id="clearLast" value="undo"> Delete </button>
+            </br>
+            <button class="btn num" id="dot" value="."> . </button>
+            <button class="btn ope" id="abreP" value="(">  (  </button>
+            <button class="btn ope" id="fechaP" value=")"> ) </button>
+            <button class="btn clear" id="clear" value="clear"> C </button>
+            <button class="btn" id="equal" value="=">=</button>
+            </br>
+            
+        </div>
+        <div>
+            <h4>Cálculos Anteriores</h4>
+            <p id="hist">
+                
+            <i id="histRecentes">mais recentes</i>
+            <!-- <i id="histAntigos">antigos</i>   -->
+            <i id="limparHist">limpar histórico</i>
+                
+            </p>
+            <ul id="listaHistorico">    
+            </ul>
+        </div>
+        <small style="display:none"></small>
+        <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

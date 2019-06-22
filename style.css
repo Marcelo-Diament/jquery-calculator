@@ -1,0 +1,120 @@
+*, body {
+  background-color: #fff;
+}
+body {
+    max-width: 400px;
+}
+h1, h2{
+    color: #349173;
+    font-size: 16pt;
+}
+p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+}
+body div{
+    padding: 5px;
+    margin: auto 5px;
+    display: block;
+}
+#calculadora{
+    background-color: grey;
+    border-radius: 5px;
+    border: 2px solid grey;
+    padding: 0 5px;
+}
+#total{
+    background-color: #499173;
+    font-weight: 400;
+    text-align: right;
+    font-size: 23px;
+    line-height: 24px;
+    padding: 5px;
+    height: 25px;
+    border-radius: 2px;
+    border: 1px solid #fff;
+    margin: 5px auto 2px auto;
+    font-family: 'KhandMajor Mono Display', sans-serif;
+    overflow: auto;
+}
+button{
+    background-color: lightgrey;
+    width: 18.95%;
+    height: 60px;
+    margin: 2px auto;
+    display: inline-block;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: filter 0.2s ease-in-out;
+}
+button:hover {
+    filter: drop-shadow(0px 0px 3px black) brightness(90%);
+}
+#equal{
+    background-color: #f4f4f4;
+}
+h4{
+    margin-bottom: 5px;
+}
+#hist{
+    margin-top: 0px;
+}
+ul{
+    list-style: none;
+}
+#listaHistorico{
+    padding-left: 4px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+#hist {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+/*#histRecentes {
+    color: blue;
+    border: 1px solid blue;
+    border-radius: 10px;
+    padding: 3px 6px;
+}*/
+/*#histAntigos {
+    color: blue;
+    border: 1px solid blue;
+    border-radius: 10px;
+    margin-left: 10px;
+    padding: 3px 6px;
+}*/
+#limparHist {
+    color: red;
+    margin-left: 10px;
+    border: 1px solid red;
+    border-radius: 10px;
+    padding: 3px 6px;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+}
+#limparHist:hover {
+    color: #fff;
+    background-color: red;
+    border: 1px solid #fff;
+}
+@media only screen and (min-width: 600px){
+    body {
+        left: calc(50% - 230px);
+        padding: 30px;
+        margin: auto;
+        position: fixed;
+            top: 5%;
+        border: 2px solid black;
+    }
+    button{
+        width: 19%;
+        height: 64px;
+        margin: 3px auto;
+    }
+}
